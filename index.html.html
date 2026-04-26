@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>TechZone Gadget Store</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+    body{background:#0f172a;color:white;}
+
+    nav{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 50px;background:#020617;
+      position:sticky;top:0;
+    }
+    nav h1{color:#3b82f6;}
+    nav ul{display:flex;gap:20px;list-style:none;}
+    nav ul li{cursor:pointer;}
+
+    .hero{
+      height:70vh;
+      background:url('images/b825246c-6c78-4992-a7b4-1014e7ca15c1.png') center/cover no-repeat;
+      display:flex;align-items:center;padding:50px;
+    }
+    .hero-content{
+      background:rgba(0,0,0,0.6);
+      padding:30px;border-radius:10px;
+    }
+    .hero h1{font-size:40px;margin-bottom:10px;}
+    .btn{padding:10px 20px;border:none;border-radius:6px;margin-top:10px;cursor:pointer;}
+    .btn-primary{background:#3b82f6;color:white;}
+
+    .section{padding:40px 50px;}
+    .section h2{margin-bottom:20px;color:#3b82f6;}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#020617;padding:20px;border-radius:10px;
+      text-align:center;
+    }
+    .card img{width:100%;width:200px; height:150px;object-fit:cover;border-radius:8px;}
+    .card h3{margin:10px 0;}
+    .price{color:#d3b107;font-weight:bold;}
+
+    footer{
+      text-align:center;padding:20px;background:#020617;margin-top:40px;
+    }
+     </style>
+</head>
+<body>
+
+<nav>
+  <h1>TechZone</h1>
+  <ul>
+    <li>Home</li>
+    <li>Shop</li>
+    <li>Categories</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Latest Tech Products</h1>
+    <p>Smartphones, Laptops & Accessories</p>
+    <button class="btn btn-primary">Shop Now</button>
+  </div>
+</section> 
+
+ 
+
+
+<!-- Smartphones -->
+<section class="section">
+  <h2>Smartphones</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/Apple-17-Pro-Max-1.webp">
+      <h3>iPhone 17</h3>
+      <p>High performance smartphone, 
+           256GB With Apple Categories,
+           A 19 pro chip with 12 GB RAM,6.9" LTPO Super Retina XDR OLED Display (120Hz , 3000 nits peak)  
+      </p>
+      <p class="price">Rs.484,990.00  - In Stock</p>
+    </div>
+    <div class="card">
+      <img src="images/1-5.jpg">
+      <h3>Samsung S23</h3>
+      <p>Premium Android device,
+         5G Network connectivity, 200 MP camera , the highest resolution on a phone,
+        12 GB RAM , 256 GB Storage
+      </p>
+      <p class="price">Rs.239,000.00 - In Stock</p>
+    </div>
+    <div class="card">
+      <img src="images/Xiaomi-Redmi-Note-14S-4G-12GB-RAM-256GB.jpg">
+      <h3>Redmi Note</h3>
+      <p>Budget friendly phone,
+         4G Network , 8GB RAM , 256 GB, Media tek helio G99 ultra (6mm)
+      </p>
+      <p class="price">Rs.59,900.00 - Available</p>
+    </div>
+  </div>
+</section>
+
+<!-- Laptops -->
+<section class="section">
+  <h2>Laptops</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/152137-laptops-review-apple-macbook-pro-2020-review-image1-pbzm4ejvvs (1).avif">
+      <h3>MacBook Pro</h3>
+      <p>Powerful laptop,
+         8 GB RAM, 256 GB Storage, Apple M1 chip with 8-core CPU , 8-core GPU and 16-core Neural Engine 
+      </p>
+      <p class="price">Rs.398,800.00 - In Stock</p>
+    </div>
+    <div class="card">
+      <img src="images/dell-xps-13-9350_fm6q.jpg">
+      <h3>Dell XPS</h3>
+      <p>Ultra slim design,
+         intel core i5 , 8 GB RAM , 512 GB , Windows 10 Home 
+      </p>
+      <p class="price">Rs.479,988.00 - Available</p>
+    </div>
+    <div class="card">
+      <img src="images/4091759843919.webp">
+      <h3>HP Pavilion</h3>
+      <p>Affordable laptop,
+intel core i3 , 8 GB RAM ,128 GB SSD , SILVER Colour
+      </p>
+      <p class="price">Rs.211,907.00 - In Stock</p>
+    </div>
+  </div>
+</section>
+
+<!-- Headphones -->
+<section class="section">
+  <h2>Headphones</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/s-l1200.jpg">
+      <h3>Sony Headphones</h3>
+      <p>Noise cancelling</p>
+      <p class="price">Rs.32,500.00 - In Stock</p>
+    </div>
+    <div class="card">
+      <img src="images/audio_bc_microphone__c4kgd4pga3cm_large.png">
+      <h3>AirPods</h3>
+      <p>Wireless earbuds</p>
+      <p class="price">Rs.197,000.00 - Available</p>
+    </div>
+    <div class="card">
+      <img src="images/jbl-partybox-ultimate-hero-42638-blue-with-ground-lightx2.webp">
+      <h3>JBL Speaker</h3>
+      <p>Portable speaker</p>
+      <p class="price">Rs.155,872.00- In Stock</p>
+    </div>
+  </div>
+</section>
+
+<!-- Smartwatches -->
+<section class="section">
+  <h2>Smartwatches</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/1-1.jpg">
+      <h3>Apple Watch</h3>
+      <p>Fitness tracking</p>
+      <p class="price">Rs.115,900.00 - Available</p>
+    </div>
+    <div class="card">
+      <img src="images/Samsung-Galaxy-Watch-8-9.webp">
+      <h3>Galaxy Watch</h3>
+      <p>Smart wearable</p>
+      <p class="price">Rs.66,990.00 - In Stock</p>
+    </div>
+    <div class="card">
+      <img src="images/6a5faea032af15417dec015381fdac89.jpg_720x720q80.jpg">
+      <h3>Mi Band</h3>
+      <p>Budget tracker</p>
+      <p class="price">Rs.20,990.00 - Available</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gaming -->
+<section class="section">
+  <h2>Gaming</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/Se3a6a0a950d340b78fc2432372dcc425b.jpg_960x960q80.jpg_.webp">
+      <h3>Gaming Mouse</h3>
+      <p>High precision</p>
+      <p class="price">Rs.14,950.00 - In Stock</p>
+    </div>
+    <div class="card">
+      <img src="images/bdlpie50large.webp">
+      <h3>Keyboard</h3>
+      <p>RGB mechanical</p>
+      <p class="price">Rs.13,500.00- Available</p>
+    </div>
+    <div class="card">
+      <img src="images/X21_X22___X25_GAMING_HEADSET_GTS0.webp">
+      <h3>Headset</h3>
+      <p>Surround sound</p>
+      <p class="price">Rs.3,000.00- In Stock</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 TechZone Gadget Store</p>
+</footer>
+
+</body>
+</html>
+
